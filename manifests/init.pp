@@ -32,7 +32,7 @@
 #
 class google_chrome(
   $ensure                 = $google_chrome::params::ensure,
-  Enum['^stable','^unstable','^beta'] $version = $google_chrome::params::version,
+  Enum['stable','unstable','beta'] $version = $google_chrome::params::version,
   $package_name           = $google_chrome::params::package_name,
   $repo_gpg_key           = $google_chrome::params::repo_gpg_key,
   $repo_gpg_key_id        = $google_chrome::params::repo_gpg_key_id,
